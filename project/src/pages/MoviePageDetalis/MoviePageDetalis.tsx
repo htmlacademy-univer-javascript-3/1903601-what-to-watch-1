@@ -1,7 +1,7 @@
 function MoviePageDetalis() {
   return (
     <div>
-      <section className="film-card film-card--full"/>
+      <section className="film-card film-card--full" />
       <div className="film-card__hero">
         <div className="film-card__bg">
           <img src="img/bg-the-grand-budapest-hotel.jpg" alt="The Grand Budapest Hotel" />
@@ -41,13 +41,13 @@ function MoviePageDetalis() {
             <div className="film-card__buttons">
               <button className="btn btn--play film-card__button" type="button">
                 <svg viewBox="0 0 19 19" width="19" height="19">
-                  
+
                 </svg>
                 <span>Play</span>
               </button>
               <button className="btn btn--list film-card__button" type="button">
                 <svg viewBox="0 0 19 20" width="19" height="20">
-                  
+
                 </svg>
                 <span>My list</span>
                 <span className="film-card__count">9</span>
@@ -88,101 +88,101 @@ function MoviePageDetalis() {
                 <p className="film-card__details-item">
                   <strong className="film-card__details-name">Starring</strong>
                   <span className="film-card__details-value">
-                    Bill Murray, <br/>
-                    Edward Norton, <br/>
-                    Jude Law, <br/>
+                    Bill Murray, <br />
+                    Edward Norton, <br />
+                    Jude Law, <br />
                     Willem Dafoe, <br>
-                    Saoirse Ronan, <br>
-                    Tony Revoloru, <br>
-                    Tilda Swinton, <br>
-                    Tom Wilkinson, <br>
-                    Owen Wilkinson, <br>
-                    Adrien Brody, <br>
-                    Ralph Fiennes, <br>
-                    Jeff Goldblum
-                  </span>
-                </p>
-              </div>
+                      Saoirse Ronan, <br>
+                        Tony Revoloru, <br>
+                          Tilda Swinton, <br>
+                            Tom Wilkinson, <br>
+                              Owen Wilkinson, <br>
+                                Adrien Brody, <br>
+                                  Ralph Fiennes, <br>
+                                    Jeff Goldblum
+                                  </span>
+                                </p>
+                              </div>
 
-              <div className="film-card__text-col">
-                <p className="film-card__details-item">
-                  <strong className="film-card__details-name">Run Time</strong>
-                  <span className="film-card__details-value">1h 39m</span>
-                </p>
-                <p className="film-card__details-item">
-                  <strong className="film-card__details-name">Genre</strong>
-                  <span className="film-card__details-value">Comedy</span>
-                </p>
-                <p className="film-card__details-item">
-                  <strong className="film-card__details-name">Released</strong>
-                  <span className="film-card__details-value">2014</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                              <div className="film-card__text-col">
+                                <p className="film-card__details-item">
+                                  <strong className="film-card__details-name">Run Time</strong>
+                                  <span className="film-card__details-value">1h 39m</span>
+                                </p>
+                                <p className="film-card__details-item">
+                                  <strong className="film-card__details-name">Genre</strong>
+                                  <span className="film-card__details-value">Comedy</span>
+                                </p>
+                                <p className="film-card__details-item">
+                                  <strong className="film-card__details-name">Released</strong>
+                                  <span className="film-card__details-value">2014</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
 
-    <div className="page-content">
-      <section className="catalog catalog--like-this">
-        <h2 className="catalog__title">More like this</h2>
+                    <div className="page-content">
+                      <section className="catalog catalog--like-this">
+                        <h2 className="catalog__title">More like this</h2>
 
-        <div className="catalog__films-list">
-          <article className="small-film-card catalog__films-card">
-            <div className="small-film-card__image">
-              <img src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg" alt="Fantastic Beasts: The Crimes of Grindelwald" width="280" height="175" />
-            </div>
-            <h3 className="small-film-card__title">
-              <a className="small-film-card__link" href="film-page.html">Fantastic Beasts: The Crimes of Grindelwald</a>
-            </h3>
-          </article>
+                        <div className="catalog__films-list">
+                          <article className="small-film-card catalog__films-card">
+                            <div className="small-film-card__image">
+                              <img src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg" alt="Fantastic Beasts: The Crimes of Grindelwald" width="280" height="175" />
+                            </div>
+                            <h3 className="small-film-card__title">
+                              <a className="small-film-card__link" href="film-page.html">Fantastic Beasts: The Crimes of Grindelwald</a>
+                            </h3>
+                          </article>
 
-          <article className="small-film-card catalog__films-card">
-            <div className="small-film-card__image">
-              <img src="img/bohemian-rhapsody.jpg" alt="Bohemian Rhapsody" width="280" height="175" />
-            </div>
-            <h3 className="small-film-card__title">
-              <a className="small-film-card__link" href="film-page.html">Bohemian Rhapsody</a>
-            </h3>
-          </article>
+                          <article className="small-film-card catalog__films-card">
+                            <div className="small-film-card__image">
+                              <img src="img/bohemian-rhapsody.jpg" alt="Bohemian Rhapsody" width="280" height="175" />
+                            </div>
+                            <h3 className="small-film-card__title">
+                              <a className="small-film-card__link" href="film-page.html">Bohemian Rhapsody</a>
+                            </h3>
+                          </article>
 
-          <article className="small-film-card catalog__films-card">
-            <div className="small-film-card__image">
-              <img src="img/macbeth.jpg" alt="Macbeth" width="280" height="175" />
-            </div>
-            <h3 className="small-film-card__title">
-              <a className="small-film-card__link" href="film-page.html">Macbeth</a>
-            </h3>
-          </article>
+                          <article className="small-film-card catalog__films-card">
+                            <div className="small-film-card__image">
+                              <img src="img/macbeth.jpg" alt="Macbeth" width="280" height="175" />
+                            </div>
+                            <h3 className="small-film-card__title">
+                              <a className="small-film-card__link" href="film-page.html">Macbeth</a>
+                            </h3>
+                          </article>
 
-          <article className="small-film-card catalog__films-card">
-            <div className="small-film-card__image">
-              <img src="img/aviator.jpg" alt="Aviator" width="280" height="175" />
-            </div>
-            <h3 className="small-film-card__title">
-              <a className="small-film-card__link" href="film-page.html">Aviator</a>
-            </h3>
-          </article>
-        </div>
-      </section>
+                          <article className="small-film-card catalog__films-card">
+                            <div className="small-film-card__image">
+                              <img src="img/aviator.jpg" alt="Aviator" width="280" height="175" />
+                            </div>
+                            <h3 className="small-film-card__title">
+                              <a className="small-film-card__link" href="film-page.html">Aviator</a>
+                            </h3>
+                          </article>
+                        </div>
+                      </section>
 
-      <footer className="page-footer">
-        <div className="logo">
-          <a href="main.html" className="logo__link logo__link--light">
-            <span className="logo__letter logo__letter--1">W</span>
-            <span className="logo__letter logo__letter--2">T</span>
-            <span className="logo__letter logo__letter--3">W</span>
-          </a>
-        </div>
+                      <footer className="page-footer">
+                        <div className="logo">
+                          <a href="main.html" className="logo__link logo__link--light">
+                            <span className="logo__letter logo__letter--1">W</span>
+                            <span className="logo__letter logo__letter--2">T</span>
+                            <span className="logo__letter logo__letter--3">W</span>
+                          </a>
+                        </div>
 
-        <div className="copyright">
-          <p>© 2019 What to watch Ltd.</p>
-        </div>
-      </footer>
-    </div>
-    </div>
-  );
+                        <div className="copyright">
+                          <p>© 2019 What to watch Ltd.</p>
+                        </div>
+                      </footer>
+                    </div>
+                  </div>
+                  );
 }
 
-export default MoviePageDetalis;
+                  export default MoviePageDetalis;
