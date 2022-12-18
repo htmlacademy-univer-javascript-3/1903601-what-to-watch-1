@@ -1,7 +1,12 @@
-import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import FilmList from '../../components/FilmList/FilmList';
+import GenresList from '../../components/GenresList/GenresList';
 import Logo from '../../components/Logo/Logo';
+import ShowMoreButton from '../../components/ui/ShowMoreButton/ShowMoreButton';
 import { AppRoute } from '../../const';
+import { useAppSelector, useAppDispatch } from '../../hooks';
+import { resetNumberFilmsShow, viewGenreFilms } from '../../store/action';
 import { film } from '../../types/film';
 
 type StartScreenProps = {
@@ -11,6 +16,20 @@ type StartScreenProps = {
 function StartScreen({films}:StartScreenProps) {
   const navigate = useNavigate();
   const filmData = films[0];
+  const dispatch = useAppDispatch();
+  const genre = useAppSelector((state) => state.genre);
+  const genreFilms = useAppSelector((state) => state.films);
+  const numberFilmsShow = useAppSelector((state)=>state.numberFilmsShow);
+
+  useEffect(() => {
+    dispatch(viewGenreFilms());
+  },[genre]);
+
+  useEffect(() => {
+    dispatch(resetNumberFilmsShow());
+  },[]);
+
+
   return (
     <>
       <section className="film-card">
@@ -35,7 +54,7 @@ function StartScreen({films}:StartScreenProps) {
               </div>
             </li>
             <li className="user-block__item">
-              <a className="user-block__link">Sign out</a>
+              <Link to='#' className="user-block__link">Sign out</Link>
             </li>
           </ul>
         </header>
@@ -77,72 +96,17 @@ function StartScreen({films}:StartScreenProps) {
       <div className="page-content">
         <section className="catalog">
           <h2 className="catalog__title visually-hidden">Catalog</h2>
-          <ul className="catalog__genres-list">
-            <li className="catalog__genres-item catalog__genres-item--active">
-              <a href="#" className="catalog__genres-link">
-                All genres
-              </a>
-            </li>
-            <li className="catalog__genres-item">
-              <a href="#" className="catalog__genres-link">
-                Comedies
-              </a>
-            </li>
-            <li className="catalog__genres-item">
-              <a href="#" className="catalog__genres-link">
-                Crime
-              </a>
-            </li>
-            <li className="catalog__genres-item">
-              <a href="#" className="catalog__genres-link">
-                Documentary
-              </a>
-            </li>
-            <li className="catalog__genres-item">
-              <a href="#" className="catalog__genres-link">
-                Dramas
-              </a>
-            </li>
-            <li className="catalog__genres-item">
-              <a href="#" className="catalog__genres-link">
-                Horror
-              </a>
-            </li>
-            <li className="catalog__genres-item">
-              <a href="#" className="catalog__genres-link">
-                Kids &amp; Family
-              </a>
-            </li>
-            <li className="catalog__genres-item">
-              <a href="#" className="catalog__genres-link">
-                Romance
-              </a>
-            </li>
-            <li className="catalog__genres-item">
-              <a href="#" className="catalog__genres-link">
-                Sci-Fi
-              </a>
-            </li>
-            <li className="catalog__genres-item">
-              <a href="#" className="catalog__genres-link">
-                Thrillers
-              </a>
-            </li>
-          </ul>
-          <FilmList films={films}/>
-          <div className="catalog__more">
-            <button className="catalog__button" type="button">
-              Show more
-            </button>
-          </div>
+          <GenresList/>
+          <FilmList films={genreFilms} numberFilmsShow={numberFilmsShow}/>
+          {numberFilmsShow <= genreFilms.length && <ShowMoreButton/>}
         </section>
         <footer className="page-footer">
           <div className="logo">
-            <a className="logo__link logo__link--light">
+            <Link to='#' className="logo__link logo__link--light">
               <span className="logo__letter logo__letter--1">W</span>
               <span className="logo__letter logo__letter--2">T</span>
               <span className="logo__letter logo__letter--3">W</span>
-            </a>
+            </Link>
           </div>
           <div className="copyright">
             <p>© 2019 What to watch Ltd.</p>

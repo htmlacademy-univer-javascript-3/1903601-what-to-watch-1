@@ -38,7 +38,7 @@ export const films: film[] = [
       'Bill Murray'
     ],
     runTime: 98,
-    genre: 'Comedy',
+    genre: 'Sci-Fi',
     released: 2011,
     isFavorite: false
   },{
@@ -98,7 +98,7 @@ export const films: film[] = [
       'Bill Murray'
     ],
     runTime: 105,
-    genre: 'Comedy',
+    genre: 'Crime',
     released: 2004,
     isFavorite: false
   },{
@@ -118,7 +118,7 @@ export const films: film[] = [
       'Bill Murray'
     ],
     runTime: 120,
-    genre: 'Comedy',
+    genre: 'Drama',
     released: 2018,
     isFavorite: false
   },{
@@ -158,7 +158,107 @@ export const films: film[] = [
       'Bill Murray'
     ],
     runTime: 118,
-    genre: 'Comedy',
+    genre: 'Romance',
+    released: 2019,
+    isFavorite: false
+  }, {
+    id: 8,
+    name: 'seven-years-in-tibet',
+    posterImage: 'img/seven-years-in-tibet-poster.jpg',
+    previewImage: 'img/seven-years-in-tibet.jpg',
+    backgroundImage: 'img/seven-years-in-tibet-bg.jpg',
+    backgroundColor: '#ffffff',
+    videoLink: 'https://some-link',
+    previewVideoLink: 'https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4',
+    description: 'seven-years-in-tibetrdkgjledkfgd;flg',
+    rating: 8.8,
+    scoresCount: 210,
+    director: 'Wes Anderson',
+    starring: [
+      'Bill Murray'
+    ],
+    runTime: 118,
+    genre: 'Romance',
+    released: 2019,
+    isFavorite: false
+  },{
+    id: 9,
+    name: 'seven-years-in-tibet',
+    posterImage: 'img/seven-years-in-tibet-poster.jpg',
+    previewImage: 'img/seven-years-in-tibet.jpg',
+    backgroundImage: 'img/seven-years-in-tibet-bg.jpg',
+    backgroundColor: '#ffffff',
+    videoLink: 'https://some-link',
+    previewVideoLink: 'https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4',
+    description: 'seven-years-in-tibetrdkgjledkfgd;flg',
+    rating: 8.8,
+    scoresCount: 210,
+    director: 'Wes Anderson',
+    starring: [
+      'Bill Murray'
+    ],
+    runTime: 118,
+    genre: 'Romance',
+    released: 2019,
+    isFavorite: false
+  },{
+    id: 10,
+    name: 'seven-years-in-tibet',
+    posterImage: 'img/seven-years-in-tibet-poster.jpg',
+    previewImage: 'img/seven-years-in-tibet.jpg',
+    backgroundImage: 'img/seven-years-in-tibet-bg.jpg',
+    backgroundColor: '#ffffff',
+    videoLink: 'https://some-link',
+    previewVideoLink: 'https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4',
+    description: 'seven-years-in-tibetrdkgjledkfgd;flg',
+    rating: 8.8,
+    scoresCount: 210,
+    director: 'Wes Anderson',
+    starring: [
+      'Bill Murray'
+    ],
+    runTime: 118,
+    genre: 'Romance',
+    released: 2019,
+    isFavorite: false
+  },{
+    id: 11,
+    name: 'seven-years-in-tibet',
+    posterImage: 'img/seven-years-in-tibet-poster.jpg',
+    previewImage: 'img/seven-years-in-tibet.jpg',
+    backgroundImage: 'img/seven-years-in-tibet-bg.jpg',
+    backgroundColor: '#ffffff',
+    videoLink: 'https://some-link',
+    previewVideoLink: 'https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4',
+    description: 'seven-years-in-tibetrdkgjledkfgd;flg',
+    rating: 8.8,
+    scoresCount: 210,
+    director: 'Wes Anderson',
+    starring: [
+      'Bill Murray'
+    ],
+    runTime: 118,
+    genre: 'Romance',
+    released: 2019,
+    isFavorite: false
+  }, {
+    id: 12,
+    name: 'seven-years-in-tibet',
+    posterImage: 'img/seven-years-in-tibet-poster.jpg',
+    previewImage: 'img/seven-years-in-tibet.jpg',
+    backgroundImage: 'img/seven-years-in-tibet-bg.jpg',
+    backgroundColor: '#ffffff',
+    videoLink: 'https://some-link',
+    previewVideoLink: 'https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4',
+    description: 'seven-years-in-tibetrdkgjledkfgd;flg',
+    rating: 8.8,
+    scoresCount: 210,
+    director: 'Wes Anderson',
+    starring: [
+      'Bill Murray'
+    ],
+    runTime: 118,
+    genre: 'Romance',
     released: 2019,
     isFavorite: false
   }
